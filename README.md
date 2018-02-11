@@ -25,15 +25,15 @@ mobileTpl
 ```
 String, name of chunk, empty by default. This chunk is returned case of mobile device and if tabletTpl or mobileTpl are empty. If it is empty then empty string will returned.
 
-#### POST-parameters
+#### POST-parameter
 It get parameter in $_POST['user_agent'] for change device agent. You can send values: full, phone, tablet and mobile (is equal phone). If it is different with real type of device, user agent will switched.
 
 #### Example
 You can switch chunks for desktop and mobile device.
 ```
-[[Mobile_detect? &fullTpl=`chunk_for_desctop` &mobileTpl=`chunk_for_mobile`]]
+[[Mobile_Detect? &fullTpl=`chunk_for_desctop` &mobileTpl=`chunk_for_mobile`]]
 ```
 You can use special chunks for mobile and tablet only. For desktop it will be empty.
 ```
-[[Mobile_detect? &phoneTpl=`chunk_for_phone` &tabletTpl=`chunk_for_tablet`]]
+[[Mobile_Detect? &phoneTpl=`chunk_for_phone` &tabletTpl=`chunk_for_tablet`]]
 ```
