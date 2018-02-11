@@ -39,16 +39,16 @@ if(!empty($_POST['user_agent'])){
 }
 
 if(!$detect->isMobile()){
-	if(!empty($fullTpl))return $evo->getChunk($fullTpl);
+	if(!empty($fullTpl))return $modx->getChunk($fullTpl);
 	else return '';
 }
 else{
 	if($detect->isTablet()){
-		if(!empty($tabletTpl))return $evo->getChunk($tabletTpl);
+		if(!empty($tabletTpl))return $modx->getChunk($tabletTpl);
 		else return '';
 	}
 	else{
-		if(!empty($phoneTpl))return $evo->getChunk($phoneTpl);
+		if(!empty($phoneTpl))return $modx->getChunk($phoneTpl);
 		else return '';
 	}
 }
